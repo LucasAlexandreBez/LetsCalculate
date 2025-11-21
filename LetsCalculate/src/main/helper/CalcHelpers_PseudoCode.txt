@@ -1,0 +1,14 @@
+Method boolean isFloat(String value)
+	if value contains '.'
+		return as true
+	else return as false
+	END OF IF/ELSE
+END OF METHOD
+
+Method int convertUserInpuToInt(String value)
+	Return the value converted to a int value
+END OF METHOD
+
+Method int convertUserInpuToFloat(String value)
+	Return the value converted to a float value
+END OF METHOD

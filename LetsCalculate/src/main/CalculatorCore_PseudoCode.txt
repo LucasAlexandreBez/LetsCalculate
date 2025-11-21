@@ -1,0 +1,45 @@
+Declare new instance of MenuHelper object
+Declare new instance of CalcHelpers object
+Declare availiableArithmeticsCalculations Arraylist<Arithmetic>
+
+Method void startCalculator
+	
+	Add new Instance of Addition to availiableArithmeticsCalculations
+	Add new Instance of Subtraction to availiableArithmeticsCalculations
+	Add new Instance of Division to availiableArithmeticsCalculations
+	Add new Instance of Multiplication to availiableArithmeticsCalculations
+
+	Invoke a new Scanner
+	Declare a int userChoice
+	Declare a String num1 and num2
+	Call method showArithmeticOptionsAndRules(Arraylist<Arithmetic>) from CalculatorCore object
+	Define userChoice based on the return from the method scanner
+	
+	Present a message requesting first number
+	Define num1 based on the return from the method scanner
+	Present a message requesting first number
+	Define num2 based on the return from the method scanner
+	
+	Call isFloat method
+	If num1 or num2 are float
+		Call method convertUserInpuToFloat(String value)
+		Get availiableArithmeticsCalculations object based on user option trough index
+		Call the calculate(float) method from the object passing the num1 and num2
+		Present value on screen 
+	else 
+		Call method convertUserInpuToInt(String value)
+		Get availiableArithmeticsCalculations object based on user option trough index
+		Call the calculate(int) method from the object passing the num1 and num2
+		Present value on screen 
+	END OF IF/ELSE
+	
+	Close the scanner
+END OF METHOD
+
+Method void convertUserInpuToNumbers
+	If String num1 or num2 has . 
+		Convert num1 and num2 values to float
+	Else
+		Convert num1 and num2 values to int
+	END OF IF/ELSE
+END OF METHOD

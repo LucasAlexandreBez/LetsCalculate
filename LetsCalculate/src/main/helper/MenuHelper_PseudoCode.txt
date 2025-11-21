@@ -1,0 +1,6 @@
+Method void showArithmeticOptionsAndRules
+	Present a welcome message with instructions of how to use
+	Repeat this with each one of the Arithmetic objects from the Arraylist<Arithmetic>
+		Present the Option with Index and name of the calculation
+	END OF REPEAT
+END OF METHOD

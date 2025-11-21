@@ -1,0 +1,5 @@
+Method void main 
+	Declare new instance of CalculatorCore object
+	Call method startCalculator from CalculatorCore object
+FIM DO METODO
+	
